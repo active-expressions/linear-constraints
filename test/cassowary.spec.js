@@ -238,6 +238,21 @@ describe('Cassowary', function() {
             expect(2 * a).to.equal(b);
             expect(a + c).to.equal(b);
         });
+
+        // using the source transformation
+        it('programming paper example', function() {
+            console.log('--- PROGRAMMING PAPER EXAMPLE ---');
+            var a = 2, b = 3, c = -3;
+
+            always: 2 * a == b; // a = 1.5, b = 3
+            console.log('after first constraint', a, b);
+            a = 10; // a = 10, b = 20
+            console.log('after assignment to "a"', a, b);
+            always: a + b == c; // a = -1, b = -2, c = -3
+            console.log('after second constraint', a, b, c);
+            b = 3000; // a = 1500, b = 3000, c = 4500
+            console.log('after assignment to "b"', a, b, c);
+        });
     });
 
     ClVariable,
