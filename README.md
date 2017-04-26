@@ -1,4 +1,4 @@
-# Linear Constraint Solver[![Build Status](https://travis-ci.org/active-expressions/linear-constraints.svg?branch=master)](https://travis-ci.org/active-expressions/linear-constraints)
+# Linear Constraint Solver [![Build Status](https://travis-ci.org/active-expressions/linear-constraints.svg?branch=master)](https://travis-ci.org/active-expressions/linear-constraints)
 An example of a reactive constraint library using active expressions
 
 ## Installation
